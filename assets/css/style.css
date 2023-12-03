@@ -1,0 +1,83 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: darkgray;
+}
+.Cabecera{
+    grid-area: Header;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1% 0;
+}
+.Aside{
+    grid-area: Aside;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Aside li{
+    list-style: none;
+    margin: 2% 0;
+}
+.Aside h2{
+    margin: 5% 0 3% 0;
+}
+.GrillaProductos{
+    grid-area: Grilla;
+    margin-bottom: 10%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "Header Header"
+    "Aside Grilla"
+    "Footer Footer"
+    ;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto auto auto;
+}
+.Conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+.card{
+    display: flex;
+    height: 29em;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.card img{
+    height: 22.5em;
+    width: 100%;
+    object-fit: cover;
+}
+.card h5{
+    font-size: 1.5em;
+    margin: 1% 0;
+}
+.boton{
+    margin-top: 3%;
+    padding: 2% 0;
+    width: 100%;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+.PiePagina{
+    grid-area: Footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1% 0;
+}
